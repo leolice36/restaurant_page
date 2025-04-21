@@ -49,6 +49,29 @@ const home = {
         // Append to parent
         parentElement.appendChild(heroSection);
     },
+    featuredFood: [
+        {
+            name: 'Margherita',
+            description: 'Fresh tomatoes, mozzarella, basil, and our signature tomato sauce',
+            price: '$14.99',
+            image: 'https://placehold.co/200x300',
+            alt: 'Margherita Pizza'
+        },
+        {
+            name: 'Pepperoni',
+            description: 'Classic pepperoni, mozzarella cheese, and our homemade tomato sauce',
+            price: '$16.99',
+            image: 'https://placehold.co/200x300',
+            alt: 'Pepperoni Pizza'
+        },
+        {
+            name: 'Vegetarian',
+            description: 'Bell peppers, mushrooms, onions, olives, and fresh mozzarella',
+            price: '$15.99',
+            image: 'https://placehold.co/200x300',
+            alt: 'Vegetarian Pizza'
+        }
+    ],
     appendFeaturedMenuSection(parentElement) {
         // Create Featured Menu section
         const menuSection = document.createElement('section');
@@ -75,34 +98,9 @@ const home = {
         const menuGrid = document.createElement('div');
         menuGrid.className = 'menu-grid';
         
-        // Add menu items
-        const pizzas = [
-            {
-                name: 'Margherita',
-                description: 'Fresh tomatoes, mozzarella, basil, and our signature tomato sauce',
-                price: '$14.99',
-                image: 'https://placehold.co/200x300',
-                alt: 'Margherita Pizza'
-            },
-            {
-                name: 'Pepperoni',
-                description: 'Classic pepperoni, mozzarella cheese, and our homemade tomato sauce',
-                price: '$16.99',
-                image: 'https://placehold.co/200x300',
-                alt: 'Pepperoni Pizza'
-            },
-            {
-                name: 'Vegetarian',
-                description: 'Bell peppers, mushrooms, onions, olives, and fresh mozzarella',
-                price: '$15.99',
-                image: 'https://placehold.co/200x300',
-                alt: 'Vegetarian Pizza'
-            }
-        ];
-        
         // Create menu items
-        pizzas.forEach(pizza => {
-            const menuItem = this.createMenuItem(pizza);
+        this.featuredFood.forEach(feature => {
+            const menuItem = this.createMenuItem(feature);
             menuGrid.appendChild(menuItem);
         });
         
@@ -116,7 +114,7 @@ const home = {
         // Append to parent
         parentElement.appendChild(menuSection);
     },
-    createMenuItem(pizza) {
+    createMenuItem(item) {
         // Create menu item div
         const menuItem = document.createElement('div');
         menuItem.className = 'menu-item';
@@ -127,8 +125,8 @@ const home = {
         
         // Create image
         const image = document.createElement('img');
-        image.src = pizza.image;
-        image.alt = pizza.alt;
+        image.src = item.image;
+        image.alt = item.alt;
         
         // Create info div
         const infoDiv = document.createElement('div');
@@ -136,16 +134,16 @@ const home = {
         
         // Create heading
         const heading = document.createElement('h3');
-        heading.textContent = pizza.name;
+        heading.textContent = item.name;
         
         // Create description
         const description = document.createElement('p');
-        description.textContent = pizza.description;
+        description.textContent = item.description;
         
         // Create price
         const price = document.createElement('div');
         price.className = 'price';
-        price.textContent = pizza.price;
+        price.textContent = item.price;
         
         // Append elements
         imageDiv.appendChild(image);

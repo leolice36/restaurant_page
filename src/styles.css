@@ -128,7 +128,16 @@ nav button{
 .featured-menu {
     padding: 80px 0;
 }
-
+.type1 {
+    background-color: var(--color-light-accent);
+    padding: 80px 0;
+    text-align: center;
+}
+.type2 {
+    background-color: var(--color-light);
+    padding: 80px 0;
+    text-align: center;
+}
 .section-title {
     text-align: center;
     margin-bottom: 50px;
