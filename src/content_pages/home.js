@@ -18,16 +18,16 @@ const home = {
         
         // Create heading
         const heading = document.createElement('h1');
-        heading.textContent = 'Authentic Italian Pizza';
+        heading.textContent = 'Dining from the Deep';
         
         // Create paragraph
         const paragraph = document.createElement('p');
-        paragraph.textContent = 'Handcrafted with love using traditional recipes and the freshest ingredients';
+        paragraph.textContent = 'Inspired by ocean gods, crafted for you.';
         
         // Create button
         const button = document.createElement('a');
         button.className = 'btn';
-        button.textContent = 'Place an Order';
+        button.textContent = 'Cast Your Craving';
         
         // Create hero image div
         const heroImageDiv = document.createElement('div');
@@ -51,25 +51,25 @@ const home = {
     },
     featuredFood: [
         {
-            name: 'Margherita',
-            description: 'Fresh tomatoes, mozzarella, basil, and our signature tomato sauce',
-            price: '$14.99',
+            name: 'Leviathan Bites',
+            description: 'Mini crab cakes made with leviathan tail flakes and deepfire aioli',
+            price: '$14.25',
             image: 'https://placehold.co/200x300',
-            alt: 'Margherita Pizza'
+            alt: 'Leviathan Bites'
         },
         {
-            name: 'Pepperoni',
-            description: 'Classic pepperoni, mozzarella cheese, and our homemade tomato sauce',
-            price: '$16.99',
+            name: 'Trident’s Treasure Ravioli',
+            description: 'Ravioli stuffed with moon lobster, drizzled in storm-sage cream',
+            price: '$24.50',
             image: 'https://placehold.co/200x300',
-            alt: 'Pepperoni Pizza'
+            alt: 'Trident’s Treasure Ravioli'
         },
         {
-            name: 'Vegetarian',
-            description: 'Bell peppers, mushrooms, onions, olives, and fresh mozzarella',
-            price: '$15.99',
+            name: 'Echo Cake',
+            description: 'Layered sponge cake that “sings” with each bite — infused with dreamfruit',
+            price: '$12.00',
             image: 'https://placehold.co/200x300',
-            alt: 'Vegetarian Pizza'
+            alt: 'Echo Cake'
         }
     ],
     appendFeaturedMenuSection(parentElement) {
@@ -88,11 +88,11 @@ const home = {
         
         // Create heading
         const heading = document.createElement('h2');
-        heading.textContent = 'Our Specialty Pizzas';
+        heading.textContent = 'Legendary Tastes from the Deep';
         
         // Create paragraph
         const paragraph = document.createElement('p');
-        paragraph.textContent = 'Explore our most popular wood-fired pizzas, made with locally sourced ingredients';
+        paragraph.textContent = "Behold a curated selection of the sea’s most mythical creations. These featured dishes represent the finest flavors from our enchanted ocean menu — each with a tale to tell and a taste that lingers beyond this realm.";
         
         // Create menu grid
         const menuGrid = document.createElement('div');

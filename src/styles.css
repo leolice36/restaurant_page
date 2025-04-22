@@ -1,13 +1,13 @@
 /* CSS Variables - Simplified */
 :root {
-    --color-primary: #d73a3a;
-    --color-primary-dark: #c62828;
-    --color-dark: #333;
-    --color-medium: #666;
-    --color-light: #fff;
-    --color-light-accent: #f8f3e9;
-    --color-footer-text: #ccc;
-    --color-border: #444;
+    --color-primary: #C42936;
+    --color-primary-dark: #04365B;
+    --color-dark: hsl(188, 57%, 16%);
+    --color-medium: #212121;
+    --color-light: #f1ebe3;
+    --color-light-accent: #d9e9e9;
+    --color-footer-text: #f1ebe3;
+    --color-border: #212121;
 }
 
 /* Reset and base styles */
@@ -236,6 +236,7 @@ nav button{
 /* Contact Section */
 .contact {
     padding: 80px 0;
+    background-color: var(--color-light-accent);
 }
 
 .contact-container {
